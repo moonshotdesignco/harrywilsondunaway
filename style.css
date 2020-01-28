@@ -22,11 +22,11 @@ section {
 }
 
 p {
-  text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
 a {
+  text-transform: uppercase;
   color: inherit;
 }
 
