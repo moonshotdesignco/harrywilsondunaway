@@ -7,8 +7,6 @@
 body {
   font-family: 'IBM Plex Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
   text-align: center;
-  margin: 1em 0;
-  padding: 0 1em;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -28,12 +26,4 @@ p {
 a {
   text-transform: uppercase;
   color: inherit;
-}
-
-@media (min-width: 900px) {
-
-  img {
-    width: 33%;
-  }
-
 }
