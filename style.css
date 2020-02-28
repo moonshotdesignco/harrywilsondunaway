@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: 'IBM Plex Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  /* font-family: 'IBM Plex Sans', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
   text-align: center;
   -webkit-text-size-adjust: 100%;
 }
@@ -26,4 +27,13 @@ p {
 a {
   text-transform: uppercase;
   color: inherit;
+  text-decoration: none;
+  border-bottom: solid 1px black;
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+a:hover {
+  color: gray;
+  border-color: gray;
 }
