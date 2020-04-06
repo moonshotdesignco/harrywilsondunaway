@@ -13,7 +13,7 @@ ul {
 }
 
 body {
-  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+  font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
   text-align: center;
   -webkit-text-size-adjust: 100%;
 }
