@@ -9,10 +9,19 @@ body {
     align: center;
   }
   -webkit-text-size-adjust: 100%;
+  position: relative;
 }
 
 img {
   width: 100%;
+}
+
+#svglayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 section {
