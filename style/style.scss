@@ -29,13 +29,44 @@ section {
   height: 5rem;
 }
 
-p {
+p, h1 {
   margin: {
     bottom: 1rem;
   }
   padding: {
     left: 1rem;
     right: 1rem;
+  }
+}
+
+div.words {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  max-width: 720px;
+  text-align: justify;
+  text-align-last: left;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  padding: 2rem 0 8rem 0;
+  box-shadow: 2px 2px 4px gray;
+  border-radius: 4px;
+  section {
+    height: 2.5rem;
+  }
+  p, h1 {
+    padding: {
+      left: 2rem;
+      right: 2rem;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  div.words {
+    box-shadow: none;
+    border-radius: initial;
+    padding: 0;
   }
 }
 
