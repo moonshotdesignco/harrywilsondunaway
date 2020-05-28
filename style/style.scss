@@ -1,5 +1,6 @@
 @import "reset";
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,400,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:200,400,600&display=swap");
 
 body {
   font: {
@@ -40,7 +41,7 @@ p, h1 {
 }
 
 div.words {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'IBM Plex Serif', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   max-width: 720px;
   text-align: justify;
   text-align-last: left;
@@ -60,6 +61,11 @@ div.words {
       right: 2rem;
     }
   }
+  p.tag {
+    text-align: right;
+    text-align-last: initial;
+    font-size: 0.875rem;
+  }  
   &#toc {
     text-align: left;
     ul {
@@ -72,6 +78,7 @@ div.words {
           }
           border: none;
           padding: unset;
+          line-height: 1.5rem;
         }
       }
     }
@@ -79,6 +86,7 @@ div.words {
 }
 
 p#jump {
+  font-size: 0.625rem;
   a {
     text: {
       transform: unset;
