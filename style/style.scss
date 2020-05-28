@@ -54,11 +54,37 @@ div.words {
   section {
     height: 2.5rem;
   }
-  p, h1 {
+  p, h1, li {
     padding: {
       left: 2rem;
       right: 2rem;
     }
+  }
+  &#toc {
+    text-align: left;
+    ul {
+      list-style-type: none;
+      li {
+        a {
+          text: {
+            transform: unset;
+            decoration: underline;
+          }
+          border: none;
+          padding: unset;
+        }
+      }
+    }
+  }
+}
+
+p#jump {
+  a {
+    text: {
+      transform: unset;
+      decoration: underline;
+    }
+    border: none;
   }
 }
 
@@ -67,6 +93,12 @@ div.words {
     box-shadow: none;
     border-radius: initial;
     padding: 0;
+    p, h1, li {
+      padding: {
+        left: 1.33rem;
+        right: 1.33rem;
+      }
+    }
   }
 }
 
