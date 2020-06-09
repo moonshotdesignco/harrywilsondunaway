@@ -28,7 +28,7 @@ body#fightback a, body#fightback a:hover, body#fightback a:active, body#fightbac
   border: none;
   text-decoration: underline;
   text-transform: none;
-  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
 img {
