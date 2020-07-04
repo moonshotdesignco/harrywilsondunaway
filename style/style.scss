@@ -1,6 +1,6 @@
 @import "reset";
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,400,600&display=swap");
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:200,400,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap");
 
 body {
   font: {
@@ -52,7 +52,7 @@ p, h1 {
 
 div.words {
   font-family: 'IBM Plex Serif', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  max-width: 720px;
+  max-width: 600px;
   text-align: justify;
   text-align-last: left;
   margin: {
@@ -60,7 +60,7 @@ div.words {
     right: auto;
   }
   padding: 2rem 0 8rem 0;
-  box-shadow: 2px 2px 4px gray;
+  box-shadow: 4px 4px 12px lightgray;
   border-radius: 4px;
   section {
     height: 2.5rem;
@@ -71,11 +71,20 @@ div.words {
       right: 2rem;
     }
   }
+  p.quote {
+    margin-left: 4rem;
+    border-left: 0.5rem solid gray;
+    font-style: italic;
+  }
+  p.caption {
+    text-align-last: right;
+    font-style: italic;
+  }
   p.tag {
     text-align: right;
     text-align-last: initial;
     font-size: 0.875rem;
-  }  
+  }
   &#toc {
     text-align: left;
     ul {
@@ -117,6 +126,9 @@ p#jump {
         right: 1.33rem;
       }
     }
+    p.quote {
+      margin-left: 1.33rem;
+    }  
   }
 }
 

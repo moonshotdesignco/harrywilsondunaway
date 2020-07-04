@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,400,600&display=swap");
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:200,400,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap");
 html,
 body,
 ol,
@@ -56,14 +56,14 @@ p, h1 {
 
 div.words {
   font-family: 'IBM Plex Serif', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  max-width: 720px;
+  max-width: 600px;
   text-align: justify;
   text-align-last: left;
   margin-left: auto;
   margin-right: auto;
   padding: 2rem 0 8rem 0;
-  -webkit-box-shadow: 2px 2px 4px gray;
-          box-shadow: 2px 2px 4px gray;
+  -webkit-box-shadow: 4px 4px 12px lightgray;
+          box-shadow: 4px 4px 12px lightgray;
   border-radius: 4px;
 }
 
@@ -74,6 +74,17 @@ div.words section {
 div.words p, div.words h1, div.words li {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+div.words p.quote {
+  margin-left: 4rem;
+  border-left: 0.5rem solid gray;
+  font-style: italic;
+}
+
+div.words p.caption {
+  text-align-last: right;
+  font-style: italic;
 }
 
 div.words p.tag {
@@ -118,6 +129,9 @@ p#jump a {
   div.words p, div.words h1, div.words li {
     padding-left: 1.33rem;
     padding-right: 1.33rem;
+  }
+  div.words p.quote {
+    margin-left: 1.33rem;
   }
 }
 
