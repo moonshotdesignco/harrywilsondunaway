@@ -103,7 +103,6 @@ div.words#toc ul {
 
 div.words#toc ul li a {
   text-transform: unset;
-  text-decoration: underline;
   border: none;
   padding: unset;
   line-height: 1.5rem;
@@ -115,7 +114,6 @@ p#jump {
 
 p#jump a {
   text-transform: unset;
-  text-decoration: underline;
   border: none;
 }
 
@@ -138,16 +136,13 @@ p#jump a {
 a {
   text-transform: uppercase;
   text-decoration: none;
+  line-height: 1.75;
   color: inherit;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: solid 2px black;
-  border-radius: 0 0 0.5rem 0.5rem;
   padding: 0 0.5rem;
+  background: lightgray;
 }
 
-a:hover {
-  color: gray;
-  border-bottom-color: gray;
+a:hover, a:focus, a:active {
+  color: lightgray;
+  background: black;
 }
