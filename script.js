@@ -19,3 +19,7 @@ $(".bin").fadeTo(1200, 1);
 //     $("#bin-a").fadeTo(1200, 1);
 //   });
 // });
+
+$(".scrlbtn").on("click", function () {
+  $("html, body").animate({scrollTop:"0"}, "1200");
+});
