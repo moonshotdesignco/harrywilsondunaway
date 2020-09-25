@@ -49,6 +49,16 @@ body {
   max-width: 768px;
 }
 
+.bar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 9999;
+  text-align: right;
+  display: none;
+}
+
 img {
   width: 100%;
   display: block;
@@ -82,8 +92,11 @@ p.quote, p.caption {
 }
 
 .scrlbtn {
+  background: #111111aa;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: inline-block;
   cursor: pointer;
-  float: right;
 }
 
 a {
