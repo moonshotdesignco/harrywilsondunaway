@@ -1,0 +1,125 @@
+html,
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    transition: 400ms linear;
+}
+
+#style-switch-container {
+    width: 3rem;
+    margin: 0;
+    margin-right: auto;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1rem 0.75rem;
+    grid-gap: 0;
+    padding: 0.5rem;
+    & > span > #ex-dark, span > #ex-light {
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+    }
+}
+
+body.dark > #style-switch-container {
+    background-color: #404040;
+}
+
+body.light > #style-switch-container {
+    background-color: #b6b6b6;
+}
+
+#style-switch {
+    position: relative;
+    grid-row: 2 / 2;
+    display: inline-block;
+    & > input{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    & > #style-switch-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #969696;
+        transition: 400ms linear;
+        cursor: pointer;
+        &:before {
+            position: absolute;
+            content: "";
+            height: 0.375rem;
+            width: 0.5rem;
+            top: 0.1875rem;
+            left: 0.5rem;
+            background-color: #303030;
+            transition: 400ms ease;
+        }
+    }
+    &>input:focus + #style-switch-slider {
+        box-shadow: 0px 0px 2px 2px orange;
+    }
+    &>input:checked + #style-switch-slider:before {
+        transform: translateX(1.5rem);
+    }
+}
+
+#ex-dark {
+    color: #e6e6e6 !important;
+    background-color: #101010 !important;
+}
+
+#ex-light {
+    color: #101010 !important;
+    background-color: #e6e6e6 !important;
+}
+
+body.light {
+    background-color: #e6e6e6;
+    color: #101010;
+}
+
+body.dark {
+    background-color: #101010;
+    color: #e6e6e6;
+}
+
+#clock, #calendar {
+    width: 100%;
+}
+
+table#cal {
+    width: 100%;
+    text-align: center;
+    & > * > tr {
+        height: 2.75rem;
+        &#wkdays {
+            text-transform: uppercase;
+            & > td {
+                border: 3px solid;
+            }
+        }
+        & > td {
+            border: 1px solid;
+        }
+    }
+    @media (min-width: 550px) {
+        width: 350px;
+    }
+}
